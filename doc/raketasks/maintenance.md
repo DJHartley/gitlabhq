@@ -36,7 +36,7 @@ Rake Version:   10.0.1
 GitLab information
 Version:        3.1.0
 Resivion:       fd5141d
-Directory:      /home/gitlab/gitlab
+Directory:      /Users/gitlab/gitlab
 DB Adapter:     mysql2
 URL:            http://localhost:3000
 HTTP Clone URL: http://localhost:3000/some-project.git
@@ -48,8 +48,8 @@ Gitolite information
 Version:        v3.04-4-g4524f01
 Admin URI:      git@localhost:gitolite-admin
 Admin Key:      gitlab
-Repositories:   /home/git/repositories/
-Hooks:          /home/git/.gitolite/hooks/
+Repositories:   /Users/git/repositories/
+Hooks:          /Users/git/.gitolite/hooks/
 Git:            /usr/bin/git
 ```
 

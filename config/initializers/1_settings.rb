@@ -111,7 +111,7 @@ class Settings < Settingslogic
       ActiveSupport::Deprecation.warn("Settings.git_base_path is deprecated and will be removed from GitLab 4.1", caller)
       gitolite.repos_path
     rescue Settingslogic::MissingSetting
-      git_host['base_path'] || '/home/git/repositories/'
+      git_host['base_path'] || '/Users/git/repositories/'
     end
 
     # FIXME: Deprecated: remove for 4.1
@@ -119,7 +119,7 @@ class Settings < Settingslogic
       ActiveSupport::Deprecation.warn("Settings.git_hooks_path is deprecated and will be removed from GitLab 4.1", caller)
       gitolite.hooks_path
     rescue Settingslogic::MissingSetting
-      git_host['hooks_path'] || '/home/git/share/gitolite/hooks/'
+      git_host['hooks_path'] || '/Users/git/share/gitolite/hooks/'
     end
 
     # FIXME: Deprecated: remove for 4.1
@@ -332,9 +332,9 @@ Settings['gitolite'] ||= Settingslogic.new({})
 Settings.gitolite['admin_key']    ||= Settings.pre_40_config ? Settings.gitolite_admin_key : 'gitlab'
 Settings.gitolite['admin_uri']    ||= Settings.pre_40_config ? Settings.gitolite_admin_uri : 'git@localhost:gitolite-admin'
 Settings.gitolite['config_file']  ||= Settings.pre_40_config ? Settings.gitolite_config_file : 'gitolite.conf'
-Settings.gitolite['hooks_path']   ||= Settings.pre_40_config ? Settings.git_hooks_path : '/home/git/share/gitolite/hooks/'
+Settings.gitolite['hooks_path']   ||= Settings.pre_40_config ? Settings.git_hooks_path : '/Users/git/share/gitolite/hooks/'
 Settings.gitolite['receive_pack'] ||= Settings.pre_40_config ? Settings.git_receive_pack : (Settings.gitolite['receive_pack'] != false)
-Settings.gitolite['repos_path']   ||= Settings.pre_40_config ? Settings.git_base_path : '/home/git/repositories/'
+Settings.gitolite['repos_path']   ||= Settings.pre_40_config ? Settings.git_base_path : '/Users/git/repositories/'
 Settings.gitolite['upload_pack']  ||= Settings.pre_40_config ? Settings.git_upload_pack : (Settings.gitolite['upload_pack'] != false)
 Settings.gitolite['ssh_host']     ||= Settings.pre_40_config ? Settings.ssh_host : (Settings.gitlab.host || 'localhost')
 Settings.gitolite['ssh_port']     ||= Settings.pre_40_config ? Settings.ssh_port : 22

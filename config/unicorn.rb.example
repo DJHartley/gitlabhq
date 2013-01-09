@@ -1,4 +1,4 @@
-app_dir = "/home/gitlab/gitlab/"
+app_dir = "/Users/gitlab/gitlab/"
 worker_processes 2
 working_directory app_dir
 

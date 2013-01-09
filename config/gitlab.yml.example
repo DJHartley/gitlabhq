@@ -90,8 +90,8 @@ backup:
 gitolite:
   admin_uri: git@localhost:gitolite-admin
   # repos_path must not be a symlink
-  repos_path: /home/git/repositories/
-  hooks_path: /home/git/.gitolite/hooks/
+  repos_path: /Users/git/repositories/
+  hooks_path: /Users/git/.gitolite/hooks/
   admin_key: gitlab
   upload_pack: true
   receive_pack: true
